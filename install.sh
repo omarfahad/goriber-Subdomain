@@ -50,5 +50,6 @@ if [ ! -d "/usr/local/bin/assetfinder" ]; then
 	mv assetfinder /usr/local/bin/
 fi
 cd ..
+chmod +x subenum.sh
 rm -fr tools
 echo -e " ${RED} Installation Done !!!!!!"
