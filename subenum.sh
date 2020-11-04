@@ -90,7 +90,7 @@ mkdir all
 mv amass.txt  assetfinder.txt  findomain.txt  subfinder.txt  sublister.txt all
 cd all
 cat amass.txt  assetfinder.txt  findomain.txt  subfinder.txt  sublister.txt | tee all_crawled.txt
-cat all_crawled | sort -u | tee unique.txt
+cat all_crawled.txt | sort -u | tee unique.txt
 mv unique.txt ../
 cd ..
 cat unique.txt | httprobe | tee unique_active_domains.txt
